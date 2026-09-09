@@ -1,0 +1,5 @@
+#ID;Nome;Bonus;Danno;Cura;Mana;Effetto
+
+1;Fiammata;3;10;0;5;nessuno
+2;Fulmine;3;7;0;4;bruciatura
+3;Cura:5;0;5;6;cura
