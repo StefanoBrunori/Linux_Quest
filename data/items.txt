@@ -2,8 +2,8 @@
 
 #----------ARMI------------
 
-1;Spada Semplice;arma;0;0;0;nessuno;1
-2;Spada da Cavaliere;arma;1;1;0;nessuno;2
+1;Spada Semplice;arma;1;1;0;nessuno;1
+2;Spada da Cavaliere;arma;2;2;0;nessuno;2
 
 3;Spadone;arma;3;3;0;nessuno;3
 4;Martello da Guerra;arma;2;4;0;nessuno;3
