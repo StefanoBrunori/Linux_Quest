@@ -1,0 +1,35 @@
+#ID;Nome;Tipo;Attacco;Danno;Difesa;Effetto;Livello
+
+#----------ARMI------------
+
+1;Spada Semplice;arma;0;0;0;nessuno;1
+2;Spada da Cavaliere;arma;1;1;0;nessuno;2
+
+3;Spadone;arma;3;3;0;nessuno;3
+4;Martello da Guerra;arma;2;4;0;nessuno;3
+5;Alabarda;arma;4;2;0;nessuno;3
+
+#--------ARMATURE----------
+
+6;Armatura Semplice;armatura;0;0;1;nessuno;1
+7;Armatura Media;armatura;0;0;2;nessuno;2
+8;Armatura Completa;armatura;0;0;3;nessuno;3
+
+#---------ANELLI-----------
+
+9;Anello Necrotico;anello;0;0;0;Bonus Vita;1
+10;Anello Necrotico+;anello;0;0;0;Bonus Vita+;2
+11;Anello Mistico;anello;0;0;0;Bonus Mana;1
+12;Anello Mistico+;anello;0;0;0;Bonus Mana+;2
+13;Anello del Guerriero;anello;0;0;0;Bonus Attacco;1
+14;Anello dello Stregone;anello;0;0;0;Bonus Magia;1
+15;Anello del Ladro;anello;0;0;0;Maestro del Furto;1
+
+#-------CONSUMABILI--------
+
+16;Pozione Piccola;consumabile;0;0;0;Cura minore
+17;Pozione Media;consumabile;0;0;0;Cura media
+18;Pozione Grande;consumabile;0;0;0;Cura maggiore
+19;Etere;consumabile;0;0;0;Ripristina Mana
+20;Elisir;consumabile;0;0;0;Ripristina Mana+
+21;Bomba piccola;consumabile;0;0;0;Danno istantaneo
