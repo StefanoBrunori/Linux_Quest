@@ -1,0 +1,5 @@
+#------EQUIPAGGIAMENTO------
+
+Arma;0
+Armatura;0
+Anello;0

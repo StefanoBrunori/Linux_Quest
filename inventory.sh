@@ -1,0 +1,3 @@
+mostra_inventario() {
+	
+}
