@@ -1,0 +1,3 @@
+HPMax;MPMax;Attacco;AttaccoMagico;Difesa;SlotMagie
+
+10;15;0;2;0;5

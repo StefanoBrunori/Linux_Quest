@@ -1,1 +1,0 @@
-Nome;HPMax;HP;MPMax;MP;Attacco;Danno;AttaccoMagico;Difesa;DifesaMagica

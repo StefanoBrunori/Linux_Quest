@@ -1,3 +1,4 @@
 Arma;3
 Armatura;8
 Anello;14
+Magie;1;2;0;0;0;0
