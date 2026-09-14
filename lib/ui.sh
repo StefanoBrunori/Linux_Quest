@@ -1,10 +1,10 @@
 #!/bin/bash
 
 mostra_testo() {
-	
-	local testo="$1"
-
 	clear
+	
+	cat assets/immagini/castello.png
+	local testo="$1"
 
 	echo "+----------------------------------------------------------+"
 	echo "| 		  					   |"
@@ -12,5 +12,6 @@ mostra_testo() {
 	echo "| 		  					   |"
 	echo "+----------------------------------------------------------+"
 	echo
+
 	read -p "Premi INVIO per continuare..."
 }

@@ -1,0 +1,1 @@
+chafa /mnt/c/users/stefano/desktop/personale/Castello.png > assets/immagini/castello.png
