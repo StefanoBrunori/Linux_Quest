@@ -1,1 +1,1 @@
-chafa /mnt/c/users/stefano/desktop/personale/Castello.png > assets/immagini/castello.png
+chafa /mnt/c/users/stefano/desktop/personale/immagini/sotterranei.png > assets/immagini/castello.png
