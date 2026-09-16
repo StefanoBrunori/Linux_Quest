@@ -1,1 +1,6 @@
-Sei all'ingresso del Castello, non senti più il vento soffiare.
++-----------------------------------------------------------------+
+| Sei all'ingresso del Castello, non senti più il vento soffiare. |
+| Una malinconica melodia pervade l'ambiente, in contrasto con    |
+| l'eroicità dell'impresa che stai per compiere. Non ti resta che |
+| proseguire nell'unica porta che si trova davanti a te.          |
++-----------------------------------------------------------------+
