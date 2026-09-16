@@ -16,3 +16,5 @@ echo "=== TEST TERMINATO ==="
 echo
 echo "Stanza corrente: $stanza_corrente"
 echo
+
+ferma_musica

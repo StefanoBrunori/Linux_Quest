@@ -20,7 +20,7 @@ introduzione() {
 	wait
 
 	# Musica del castello
-	cambia_musica "assets/musica/ingresso.mp3"
+	riproduci_musica "assets/musica/ingresso.mp3"
 
 	mostra_scena \
 		"assets/immagini/ingresso.png" \
