@@ -7,5 +7,5 @@ Così come l'ambiente esterno rappresenta il viaggio dell'eroe,
 il castello rappresenta l'avventura, a volte l'obiettivo, a volte è
 un ostacolo da superare.
 
-Appunti di Lorien: Tra l'altro il Castello a sua volta può essere diviso
-in ulteriori parti: le stanze, le prigioni, e così via... 
+Appunti di Lorien: il Castello a sua volta può essere diviso in ulteriori
+parti: le stanze, le prigioni, e così via... 
