@@ -7,7 +7,7 @@ introduzione() {
 
 	# Scena introduttiva
 	mostra_scena \
-		"assets/immagini/castello.png" \
+		"assets/imm_ascii/castello.txt" \
 		"assets/testi/intro.txt"
 	
 	# Ferma la musica esterna
@@ -22,8 +22,10 @@ introduzione() {
 	# Musica del castello
 	riproduci_musica "assets/musica/ingresso.mp3"
 
+	clear
+
 	mostra_scena \
-		"assets/immagini/ingresso.png" \
+		"assets/imm_ascii/ingresso.txt" \
 		"assets/testi/ingresso.txt"
 	
 	stanza_corrente="Stanza_0"
