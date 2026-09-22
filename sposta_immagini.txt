@@ -1,1 +1,0 @@
-chafa /mnt/c/users/stefano/desktop/personale/immagini/sotterranei.png > assets/immagini/castello.png

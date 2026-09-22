@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Numero di stanze della mappa di prova
-NUMERO_STANZE=6
+NUMERO_STANZE=8
 
 
 inizializza_mappa() {
@@ -12,7 +12,13 @@ inizializza_mappa() {
 
     # Registra le stanze visitate
     declare -gA visitata
+    
+    # Dichiara l'array dei nomi delle stanze
+    declare -gA nome_stanza
 
+    # Dichiara l'array delle immagini delle stanze
+    declare -gA immagine_stanza
+	
     genera_mappa
 
     stanza_corrente="Stanza_0"
@@ -43,6 +49,26 @@ genera_mappa() {
     local nuova_stanza
     local stanza_precedente
     local indice_collegamento
+
+    # Assegna nomi reali alle stanze
+    nome_stanza["Stanza_0"]="Ingresso"
+    nome_stanza["Stanza_1"]="Sala da Pranzo"	
+    nome_stanza["Stanza_2"]="Corridoio Ovest"
+    nome_stanza["Stanza_3"]="Corridoio Est"
+    nome_stanza["Stanza_4"]="Cucina" 
+    nome_stanza["Stanza_5"]="Camera Nobiliare"
+    nome_stanza["Stanza_6"]="Camera servitù"
+    nome_stanza["Stanza_7"]="Biblioteca"
+
+    # Assegna le immagini alle stanze
+    immagine_stanza["Stanza_0"]="assets/imm_ascii/ingresso.txt"
+    immagine_stanza["Stanza_1"]="assets/imm_ascii/sala_pranzo.txt"
+    immagine_stanza["Stanza_2"]="assets/imm_ascii/corridoio_ovest.txt"
+    immagine_stanza["Stanza_3"]="assets/imm_ascii/corridoio_est.txt"
+    immagine_stanza["Stanza_4"]="assets/imm_ascii/cucina.txt"
+    immagine_stanza["Stanza_5"]="assets/imm_ascii/camera_nobiliare.txt"
+    immagine_stanza["Stanza_6"]="assets/imm_ascii/camera_servitu.txt"
+    immagine_stanza["Stanza_7"]="assets/imm_ascii/biblioteca.txt" 	 
 
     # Svuota eventuali mappe precedenti
     mappa=()
@@ -76,6 +102,18 @@ genera_mappa() {
     done
 }
 
+mostra_stanza_corrente() {
+	clear
+
+	cat "${immagine_stanza[$stanza_corrente]}"
+
+	echo
+	echo "=================================="
+	echo " ${nome_stanza[$stanza_corrente]}"
+	echo "=================================="
+
+	mostra_uscite
+}
 
 mostra_uscite() {
     local numero_porta=1
@@ -87,7 +125,7 @@ mostra_uscite() {
 
     for destinazione in ${mappa[$stanza_corrente]}
     do
-        echo "$numero_porta) $destinazione"
+        echo "$numero_porta) ${nome_stanza[$destinazione]}"
         numero_porta=$((numero_porta + 1))
     done
 }
@@ -142,14 +180,14 @@ mostra_mappa_visitata() {
                 simbolo="*"
             fi
 
-            printf "%s %-10s -> " "$simbolo" "$stanza"
+            printf "%s %-20s -> " "$simbolo" "${nome_stanza[$stanza]}"
 
             for destinazione in ${mappa[$stanza]}
             do
                 if [ "${visitata[$destinazione]}" = "1" ]; then
-                    printf "%s " "$destinazione"
+                    printf "%s | " "${nome_stanza[$destinazione]}"
                 else
-                    printf "??? "
+                    printf "??? | "
                 fi
             done
 
@@ -183,7 +221,7 @@ mostra_mappa_completa() {
             printf "  "
         fi
 
-        echo "$stanza -> ${mappa[$stanza]}"
+        echo "$stanza (${nome_stanza[$stanza]})-> ${mappa[$stanza]}"
     done
 
     echo
