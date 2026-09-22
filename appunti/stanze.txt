@@ -1,0 +1,35 @@
+Macro aree:
+Zona centrale:
+- Sala da pranzo
+- Corridoio x3
+ - est
+ - ovest
+ - nord
+- Stanza musicale
+- Studio 
+- Cucina
+- Camera da letto x3
+ - Camera degli ospiti est
+ - Camera di servizio
+ - Camera degli ospiti ovest
+ 
+
+Biblioteca
+- Sala centrale
+- Ala ovest
+- Ala est
+- Stanza delle conferenze
+- Laboratorio di scrittura x2
+- Laboratorio di lettura x2
+
+
+Sotterranei
+- Corridoio x2
+ - corridoio est
+ - corridoio ovest
+- Cella x2
+ - cella est
+ - cella ovest
+- Sala delle torture
+- Stanza dei rituali
+- Crocevia

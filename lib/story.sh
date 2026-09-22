@@ -8,7 +8,7 @@ introduzione() {
 	# Scena introduttiva
 	mostra_scena \
 		"assets/imm_ascii/castello.txt" \
-		"assets/testi/intro.txt"
+		"assets/testi_stanze/intro.txt"
 	
 	# Ferma la musica esterna
 	ferma_musica
@@ -26,7 +26,7 @@ introduzione() {
 
 	mostra_scena \
 		"assets/imm_ascii/ingresso.txt" \
-		"assets/testi/ingresso.txt"
+		"assets/testi_stanze/ingresso.txt"
 	
 	stanza_corrente="Stanza_0"
 	visitata["$stanza_corrente"]=1
