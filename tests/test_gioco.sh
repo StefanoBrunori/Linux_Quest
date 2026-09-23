@@ -4,8 +4,10 @@ source lib/map.sh
 source lib/ui.sh
 source lib/music.sh
 source lib/story.sh
+source lib/loot.sh
 
 inizializza_mappa
+inizializza_pool_oggetti
 
 introduzione
 
@@ -14,6 +16,7 @@ do
 	mostra_stanza_corrente
 
 	echo
+	echo "E) Esplora stanza" 
 	echo "M) Mappa visitata"
 	echo "D) Debug mappa completa"
 	echo "Q) Esci"
@@ -27,6 +30,10 @@ do
 		q|Q)
 			ferma_musica
 			break
+			;;
+
+		e|E)
+			esplora_stanza
 			;;
 		
 		m|M)

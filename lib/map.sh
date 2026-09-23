@@ -3,6 +3,14 @@
 # Numero di stanze della mappa di prova
 NUMERO_STANZE=8
 
+# Probabilità che appaia un mostro
+PROBABILITA_MOSTRO=20
+
+# Tasso di incremento della probabilità di incontrare il mostro
+INCREMENTO_MOSTRO=10
+
+# Probabilità che si trovi un oggetto
+PROBABILITA_OGGETTO=30
 
 inizializza_mappa() {
     # Array associativo:
@@ -105,12 +113,7 @@ genera_mappa() {
 mostra_stanza_corrente() {
 	clear
 
-	cat "${immagine_stanza[$stanza_corrente]}"
-
-	echo
-	echo "=================================="
-	echo " ${nome_stanza[$stanza_corrente]}"
-	echo "=================================="
+	mostra_scenario_stanza
 
 	mostra_uscite
 }
@@ -202,6 +205,77 @@ mostra_mappa_visitata() {
     echo
 
     read -r -p "Premi INVIO per tornare al gioco..."
+}
+
+
+mostra_scenario_stanza() {
+
+	clear
+
+	cat "${immagine_stanza[$stanza_corrente]}"
+
+	echo
+	echo "=================================="
+	echo " ${nome_stanza[$stanza_corrente]}"
+	echo "=================================="
+}
+
+# Funzione per esplorare la stanza
+esplora_stanza() {
+	local tiro_mostro
+	local tiro_oggetto
+
+	mostra_scenario_stanza
+
+	echo
+	echo "Esplori attentamente la stanza..."
+	echo
+
+	tiro_mostro=$((RANDOM % 100 + 1))
+	tiro_oggetto=$((RANDOM % 100 + 1))
+
+	# Controllo mostro
+	if (( tiro_mostro <= PROBABILITA_MOSTRO )); then
+		
+		echo "Un mostro compare dall'oscurità!"
+		echo
+
+		echo "[TEST] Qui partirà il combattimento"
+
+		# Reset probabilità
+		PROBABILITA_MOSTRO=10
+
+		echo
+		read -r -p "Premi INVIO per continuare..."
+
+		return
+
+	else
+		echo "Nessun mostro in vista."
+		
+		PROBABILITA_MOSTRO=$((PROBABILITA_MOSTRO + INCREMENTO_MOSTRO))
+
+		if (( PROBABILITA_MOSTRO > 60 )); then
+			PROBABILITA_MOSTRO=80
+		fi
+	fi
+
+	echo
+
+	# Controllo oggetto
+	if (( tiro_oggetto <= PROBABILITA_OGGETTO )); then
+		
+		echo "Hai trovato qualcosa..."
+		echo
+
+		trova_oggetto
+	else
+
+		echo "Non trovi niente di interessante."
+	fi
+
+	echo
+	read -r -p "Premi INVIO per continuare..."
 }
 
 
