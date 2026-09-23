@@ -21,6 +21,9 @@ inizializza_mappa() {
     # Registra le stanze visitate
     declare -gA visitata
     
+    # Flag per indicare che hai trovato lo strumento
+    declare -gA stanza_esplorata
+
     # Dichiara l'array dei nomi delle stanze
     declare -gA nome_stanza
 
@@ -96,6 +99,8 @@ genera_mappa() {
         stanza_precedente="Stanza_$indice_collegamento"
 
         collega_stanze "$nuova_stanza" "$stanza_precedente"
+
+	stanza_esplorata["Stanza_$i"]="false"
     done
 
     # Connessioni aggiuntive
@@ -269,6 +274,8 @@ esplora_stanza() {
 		echo
 
 		trova_oggetto
+		stanza_esplorata["$stanza_corrente"]="true"
+		
 	else
 
 		echo "Non trovi niente di interessante."
