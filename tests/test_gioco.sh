@@ -18,19 +18,10 @@ while true
 do
 	mostra_stanza_corrente
 
-	echo
-	echo "E) Esplora stanza"
-	echo "I) Inventario" 
-	echo "M) Mappa visitata"
-	echo "D) Debug mappa completa"
-	echo "Q) Esci"
-	echo
+	read -rn1 scelta
 
-	read -r -p "Scelta: " scelta
-	echo "$scelta"
-	
 	case "$scelta" in
-	
+
 		q|Q)
 			ferma_musica
 			break
@@ -47,11 +38,11 @@ do
 				esplora_stanza
 			fi
 			;;
-		
+
 		i|I)
 			mostra_inventario
 			;;
-	
+
 		m|M)
 			mostra_mappa_visitata
 		        ;;
@@ -59,7 +50,7 @@ do
 		d|D)
 			mostra_mappa_completa
 			;;
-		
+
 		*)
 			cambia_stanza
 			;;

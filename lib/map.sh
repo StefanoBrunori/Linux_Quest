@@ -118,22 +118,37 @@ genera_mappa() {
 mostra_stanza_corrente() {
 	clear
 
-	mostra_scenario_stanza
+	cat "${immagine_stanza[$stanza_corrente]}"
 
-	mostra_uscite
+	echo
+	echo "╔══════════════════════════════════════╗"
+	printf "║ %-36s ║\n" "${nome_stanza[$stanza_corrente]}"
+	echo "╚══════════════════════════════════════╝"
+
+	echo
+	echo "► MENÙ"
+	echo
+	echo "[E] Esplora la stanza"
+	echo "[I] Inventario"
+	echo "[M] Mappa"
+	echo "[D] Debug mappa completa"
+	echo "[Q] Esci"
+
+	echo
+	echo "► MOVIMENTO"
+	echo
+
+	mostra_uscita
 }
 
-mostra_uscite() {
+mostra_uscita() {
+
     local numero_porta=1
     local destinazione
 
-    echo
-    echo "Porte disponibili:"
-    echo
-
     for destinazione in ${mappa[$stanza_corrente]}
     do
-        echo "$numero_porta) ${nome_stanza[$destinazione]}"
+        echo "[$numero_porta] ${nome_stanza[$destinazione]}"
         numero_porta=$((numero_porta + 1))
     done
 }
@@ -173,7 +188,7 @@ mostra_mappa_visitata() {
     local simbolo
 
     clear
-
+    cat "assets/imm_ascii/mappa.txt"
     echo "========== MAPPA VISITATA =========="
     echo
 
