@@ -1,0 +1,14 @@
+Forme:
+- stanza con 1 - 3 uscite
+- corridoio (dritto o angolo)
+
+Stanze speciali:
+- trappola
+- santuario
+- mercante
+- enigma
+
+Eventi:
+- Combattimento
+- Cripta
+- Trappola

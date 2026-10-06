@@ -1,0 +1,14 @@
+#ID;Nome;Uscite
+
+# Crocevia
+1;Crocevia;NESO
+ 
+# Cucina con un solo accesso
+2;Cucina;N
+3;Cucina;E
+4;Cucina;O
+5;Cucina;S
+
+# Camera da letto (nord)
+6;Camera da letto;N
+7;

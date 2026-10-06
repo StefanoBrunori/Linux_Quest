@@ -1,0 +1,21 @@
+Stanze area 1 (castello):
+- salotto
+- corridoio (dritto o angolo)
+- cucina
+- stanza da letto
+- cortile interno
+- biblioteca
+
+Stanze area 2 (sotterranei):
+- cella
+- sala delle torture
+- sala dei rituali
+- alloggi del carceriere
+- corridoio
+- armeria
+- sala della ricerca
+
+Stanze area 3 (cattedrale):
+- navata
+- stanze dei sacerdoti
+- tempio
