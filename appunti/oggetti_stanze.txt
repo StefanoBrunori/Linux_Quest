@@ -1,0 +1,9 @@
+Stanza     | Tipo di oggetti
+-----------|------------------
+Salotto    | Nessuno
+Cucina     | Pozioni
+Camera     | Oggetti magici
+Biblioteca | Pagine di storia
+Crocevia   | Nessuno 
+           |
+           

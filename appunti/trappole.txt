@@ -1,0 +1,25 @@
+Possibili Trappole
+
+Crollo:
+Il soffitto si crepa e iniziano a cadere macerie su di te!
+
+Tiro forza superato: facendoti scudo con le braccia riesci a deviare i detriti... 
+Tiro forza fallito: i detriti ti colpiscono in pieno, causandoti X danni...
+
+Trapdoor:
+Una botola si apre sotto i tuoi piedi!
+
+Tiro riflessi superato: Con uno scatto fulmineo riesci a evitare la caduta...
+Tiro riflessi fallito: La trappola ti prende di sorpresa infliggendoti X danni...
+
+Palla di fuoco: 
+Una trappola magica ti scaglia una sfera infuocata!
+
+Tiro mente superato: concentrandoti sulla magia riesci a dissiparla prima che possa colpirti...
+Tiro mente fallito: non riesci a dissipare la magia in tempo, subendo X danni...
+
+
+
+
+ 
+

@@ -1,14 +1,31 @@
 Forme:
 - stanza con 1 - 3 uscite
-- corridoio (dritto o angolo)
+- stanza senza uscite 
 
 Stanze speciali:
-- trappola
-- santuario
-- mercante
-- enigma
+- santuario (crocevia)
+- mercante (salotto)
 
 Eventi:
 - Combattimento
 - Cripta
 - Trappola
+
+Azioni:
+- Movimento
+- Esplorazione
+
+Risultati esplorazione (1 volta per stanza):
+- Mostro minore (danno diretto)
+- Oggetti comuni
+- Soldi (1 - 3£)
+- Nulla
+
+Possibilità cripta:
+- Trappola 
+- Soldi (5 - 10£)
+
+Oggetti mercante:
+- Pergamena del ritorno 5£
+- Pozione perfetta 10£
+- Pergamena dell'esilio 20£
